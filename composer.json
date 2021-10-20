@@ -1,0 +1,43 @@
+{
+  "name": "shipperhq/module-upsmychoice",
+  "description": "UPS MyChoice integration with ShipperHQ",
+  "type": "magento2-module",
+  "version": "20.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "ShipperHQ",
+      "email": "sales@shipperhq.com",
+      "homepage": "http://www.Shipperhq.com"
+    },
+    {
+      "name": "Zowta LLC"
+    }
+  ],
+  "support": {
+    "documentation": "http://docs.shipperhq.com"
+  },
+  "require": {
+    "php": "^7.3.0 | ^8.0.0",
+    "ext-json": "*",
+    "magento/framework": ">=100.0",
+    "shipperhq/library-ws": "20.*",
+    "shipperhq/module-logger": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "ext-json": "*",
+    "fooman/magento2-phpunit-bridge": "^0.9.0"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "ShipperHQ\\UPSMyChoice\\": ""
+    }
+  }
+}
