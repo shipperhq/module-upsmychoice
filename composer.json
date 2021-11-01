@@ -2,7 +2,7 @@
   "name": "shipperhq/module-upsmychoice",
   "description": "UPS MyChoice integration with ShipperHQ",
   "type": "magento2-module",
-  "version": "20.0.0",
+  "version": "20.0.1",
   "license": [
     "OSL-3.0",
     "AFL-3.0"

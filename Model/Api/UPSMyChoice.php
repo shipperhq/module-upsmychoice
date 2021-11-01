@@ -62,6 +62,12 @@ class UPSMyChoice implements \ShipperHQ\UPSMyChoice\Api\UPSMyChoiceInterface
             return $this->upsMyChoiceConnectorResponseFactory->create(['success' => false]);
         }
 
+        // MNB-1837 Will be null for virtual orders
+        if (empty($order->getShippingMethod(true))) {
+            $this->shqLogger->postDebug("ShipperHQ_UPSMyChoice", "Order appears to be virtual. Will not display UPSMyChoice", '');
+            return $this->upsMyChoiceConnectorResponseFactory->create(['success' => false]);
+        }
+
         // Ensure using a UPS carrier code - see https://regex101.com/r/oJN21j/1
         // TODO: In some VERY specific edge case configs this could fail us.  But there's no universal way to get carrierType here for both Standard and EC extensions
         $carrierCode = $order->getShippingMethod(true)->getCarrierCode();
