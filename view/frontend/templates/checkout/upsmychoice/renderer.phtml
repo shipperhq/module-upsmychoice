@@ -18,7 +18,6 @@
         require([settings.jsBundleUrl], (bundle) => {
             const domNode = document.querySelector('upsmychoiceenrollmentapp')
             const {enrollmentUrl} = settings;
-            console.log("settings", settings, "bundle", bundle)
             bundle.renderApp(domNode, {enrollmentUrl})
         })
     }

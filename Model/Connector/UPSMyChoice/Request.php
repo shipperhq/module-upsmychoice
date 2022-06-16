@@ -275,7 +275,7 @@ class Request extends AbstractWebServiceRequest implements \JsonSerializable
         );
     }
 
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return [
             'action' => $this->getAction(),

@@ -2,7 +2,7 @@
   "name": "shipperhq/module-upsmychoice",
   "description": "UPS MyChoice integration with ShipperHQ",
   "type": "magento2-module",
-  "version": "20.0.1",
+  "version": "20.1.0",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
@@ -21,7 +21,6 @@
     "documentation": "http://docs.shipperhq.com"
   },
   "require": {
-    "php": "^7.3.0 | ^8.0.0",
     "ext-json": "*",
     "magento/framework": ">=100.0",
     "shipperhq/library-ws": "20.*",

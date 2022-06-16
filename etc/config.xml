@@ -12,7 +12,7 @@
     <default>
         <shqupsmychoice>
             <env>
-                <extension_version>20.0.1</extension_version>
+                <extension_version>20.1.0</extension_version>
                 <api_url>http://postapi.shipperhq.com/v1/upsMyChoice</api_url>
                 <api_timeout>30</api_timeout>
                 <js_bundle_url>https://assets.shipperhq.com/shq-upsmychoice_1.0.0.js</js_bundle_url>

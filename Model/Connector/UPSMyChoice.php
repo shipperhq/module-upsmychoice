@@ -186,7 +186,7 @@ class UPSMyChoice
      */
     private function getSanitizedPostalCode(OrderInterface $order): string
     {
-        $rawPostalCode = $order->getShippingAddress()->getPostcode();
+        $rawPostalCode = (string) $order->getShippingAddress()->getPostcode();
         $country = strtolower($order->getShippingAddress()->getCountryId());
         if ($country === 'us' && strlen($rawPostalCode) > 9 && strpos($rawPostalCode, '-') !== false) {
             return str_replace('-', '', $rawPostalCode);

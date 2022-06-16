@@ -12,3 +12,7 @@ Initial release
 MNB-1837 Fix fatal exception on place order when order is virtual
 
 
+## 20.1.0 (2022-06-16)
+MNB-2430 Magento 2.4.4 / PHP8.1 compatibility
+
+
